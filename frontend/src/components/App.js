@@ -2,6 +2,9 @@ import React from 'react';
 import Stock from './Stock';
 import API from '../utils/API';
 
+// example borrowed from
+// https://designrevision.com/react-axios/
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -15,6 +18,8 @@ export default class App extends React.Component {
   }
 
   // adjust this to make an api call to IEX Cloud api and pull in stock data
+  // change from being component did mount to be a button call to get the data
+  // and accept parameters to call the api
   async componentDidMount() {
     try {
       let userData = await API.get('/', {
