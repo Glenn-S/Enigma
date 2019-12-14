@@ -2,6 +2,9 @@ import React from 'react';
 import Stock from './Stock';
 import API from '../utils/API';
 
+// example borrowed from
+// https://designrevision.com/react-axios/
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);
